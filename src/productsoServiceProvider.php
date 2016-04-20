@@ -13,7 +13,14 @@ class productsoServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        require __DIR__ . '/Http/routes.php';
+        $this->loadViewsFrom(__DIR__.'/resources/views', 'Productso');
+
+        $this->publishes([
+            __DIR__.'/migrations/' => base_path('/database/migrations'),
+            __DIR__.'/published/soadmin/' => base_path('/app/Admin'),
+            __DIR__.'/resources/views' => resource_path('views/vendor/Productso'),
+        ], 'category');
     }
 
     /**
