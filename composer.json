@@ -1,0 +1,48 @@
+{
+    "name": ":vendor/productso",
+    "type": "library",
+    "description": "product",
+    "keywords": [
+        ":vendor",
+        ":package_name"
+    ],
+    "homepage": "https://github.com/rowlin/productso",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "rowlin",
+            "email": "rowlinest90@gmail.com",
+            "homepage": "row-page.ru",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.1",
+        "php" : "~5.5|~7.0"
+
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*",
+        "scrutinizer/ocular": "~1.1",
+        "squizlabs/php_codesniffer": "~2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "rowlin\\productso\\": "src",
+            "rowlin\\productso\\Http\\Controllers\\": "src/Http/Controllers/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "rowlin\\productso\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
