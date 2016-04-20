@@ -1,10 +1,10 @@
 {
-    "name": ":vendor/productso",
+    "name": "rowlin/productso",
     "type": "library",
     "description": "product",
     "keywords": [
-        ":vendor",
-        ":package_name"
+        "rowlin",
+        "productso"
     ],
     "homepage": "https://github.com/rowlin/productso",
     "license": "MIT",
